@@ -16,6 +16,11 @@ import ShangothonikKathamo from "./Pages/PourashovaTottho/ShangothonicKathamo";
 import Proshashon from "./Pages/Bivag/Proshashon";
 import Prokoushol from "./Pages/Bivag/Prokoushol";
 import Shastho from "./Pages/Bivag/Shastho";
+import Manchittro from "./Pages/PourashovaTottho/Manchittro";
+import EducationalInfo from "./Pages/PourashovaTottho/EducationalInfo";
+import ProdhanNirbahi from "./Pages/Jogajog/ProdhanNirbahi";
+import CouncilorsProfile from "./Pages/Jogajog/CouncilorsProfile";
+import Jogajog from "./Pages/Jogajog/Jogajog";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +62,26 @@ const router = createBrowserRouter([
      {
       path:'/shastho',
       element:<Shastho></Shastho>
+     },
+     {
+      path:'/manchittro',
+      element:<Manchittro></Manchittro>
+     },
+     {
+      path:'/educationalInfo',
+      element:<EducationalInfo></EducationalInfo>
+     },
+     {
+      path:'/prodhanNirbahi',
+      element:<ProdhanNirbahi></ProdhanNirbahi>
+     },
+     {
+      path:'/councilorsProfile',
+      element:<CouncilorsProfile></CouncilorsProfile>
+     },
+     {
+      path:'/jogajog',
+      element:<Jogajog></Jogajog>
      },
     ]
   },

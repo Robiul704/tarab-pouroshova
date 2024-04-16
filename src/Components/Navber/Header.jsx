@@ -19,7 +19,7 @@ const Header = () => {
     ]
     return (
         <div className="overflow-hidden">
-    <div className="grid lg:grid-cols-2 bg-orange-400 p-2 justify-start items-center">
+    <div className="grid sm:grid-cols-2 lg:grid-cols-2 bg-orange-400 p-2 justify-start items-center">
         <h1 className="text-cyan-600 font-bold text-xl">অনলাইন সার্টিফিকেট সিস্টেম</h1>
         <div className="text-right space-x-4">
             <button className="rounded-lg px-3 py-2 border border-cyan-600 text-cyan-600 font-bold text-xl">

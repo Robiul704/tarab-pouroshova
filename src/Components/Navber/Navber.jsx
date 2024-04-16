@@ -7,73 +7,136 @@ import { FaHome } from "react-icons/fa";
 const NavBar = () => {
 
   const links=<>
-            <li className="bg-zinc-100">
+            <li className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  }>
               <details className="dropdown">
-                    <summary className="m-1 ">পৌরসভা তথ্য</summary>
-              <ul className="p-2 shadow menu dropdown-content z-[50] bg-zinc-100 rounded-box w-52">
+                    <summary className="m-1  z-50">পৌরসভা তথ্য</summary>
+              <ul className="p-2  z-[50] bg-zinc-100 rounded-box w-52">
                      
-                      <Link to={'/meyorList'}>
+                      <Link className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  } to={'/meyorList'}>
                       <li><a>সম্মানিত মেয়রদের তালিকা</a></li>
                        </Link>
-                        <Link to={'/pouroshovaShortDes'}>
+                        <Link className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  } to={'/pouroshovaShortDes'}>
                         <li><a>পৌরসভার সংক্ষিপ্ত বিবরন</a></li>
                        </Link>
-                        <Link to={'/shangothonicKathamo'}>
+                        <Link className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  } to={'/shangothonicKathamo'}>
                         <li><a>পৌরসভার সাংগঠনিক কাঠামো</a></li>
                        </Link>
-                       <Link to={'/kormokortaKormochari'}>
+                       <Link className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  } to={'/kormokortaKormochari'}>
                        <li><a>পৌরসভার কর্মকর্তা ও কর্মচারী</a></li>
                        </Link>
+                       <Link className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  } to={'/manchittro'}>
                        <li><a>পৌরসভার মানচিত্র</a></li>
-                        <li><a>শিক্ষা বিষয়ক তথ্য</a></li>
+                       </Link>
+                       <Link className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  } to={'/educationalInfo'}>
+                       <li><a>শিক্ষা বিষয়ক তথ্য</a></li>
+                       </Link>
+                        
                </ul>
              </details>
             </li>
-            <li className="bg-zinc-100">
+            <li className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  }>
                <NavLink to={"/akNojore"}> এক নজরে </NavLink>
             </li>
 
-                <li className="bg-zinc-100">
+                <li className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  }>
               <details className="dropdown">
                     <summary className="m-1 "> বিভাগ</summary>
-              <ul className="p-2 shadow menu dropdown-content z-[50] bg-zinc-100 rounded-box w-52">
+              <ul className="p-2  z-[50] bg-zinc-100  w-52">
                         
-                        <Link to={'/proshashon'}>
-                        <li><a>প্রশাসন বিভাগ</a></li>
+                        <Link className={({ isActive, isPending }) =>
+                              isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+                              } to={'/proshashon'}>
+                             <li><a>প্রশাসন বিভাগ</a></li>
                        </Link>
-                        <Link to={'/prokoushol'}>
-                        <li><a>প্রকৌশল বিভাগ</a></li>
+
+                        <Link className={({ isActive, isPending }) =>
+                              isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+                              } to={'/prokoushol'}>
+                             <li><a>প্রকৌশল বিভাগ</a></li>
                        </Link>
-                        <Link to={'/shastho'}>
-                        <li><a>স্বাস্থ্য বিভাগ</a></li>
+
+                        <Link className={({ isActive, isPending }) =>
+                               isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+                               } to={'/shastho'}>
+                               <li><a>স্বাস্থ্য বিভাগ</a></li>
                        </Link>
                        
+                </ul>
+                   </details>
+                        </li>
+
+                         <li className={({ isActive, isPending }) =>
+                               isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+                                }>
+         <details className="dropdown">
+              <summary className="m-1 "> যোগাযোগ</summary>
+                  <ul className="p-2   z-[50] bg-zinc-100  w-52">
+                     
+                        <Link className={({ isActive, isPending }) =>
+                               isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+                               } to={'/jogajog'}>
+                               <li><a>যোগাযোগ</a></li>
+                       </Link>
+
+                        <Link className={({ isActive, isPending }) =>
+                               isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+                               } to={'/councilorsProfile'}>
+                               <li><a>মেয়রের প্রোফাইল এবং সংযোগ</a></li>
+                       </Link>
+
+                        <Link className={({ isActive, isPending }) =>
+                               isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+                               } to={'/councilorsProfile'}>
+                               <li><a>কাউন্সিলরদের প্রোফাইল এবং সংযোগ</a></li>
+                       </Link>
+
+                        <Link className={({ isActive, isPending }) =>
+                              isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+                              } to={'/prodhanNirbahi'}>
+                              <li><a>প্রধান নির্বাহী কর্মকর্তার প্রোফাইল এবং সংযোগ</a></li>
+                       </Link>
                </ul>
              </details>
             </li>
 
-            <li className="bg-zinc-100">
-              <details className="dropdown">
-                    <summary className="m-1 "> যোগাযোগ</summary>
-              <ul className="p-2 shadow menu dropdown-content z-[50] bg-zinc-100 rounded-box w-52">
-                        <li><a>মেয়রের প্রোফাইল এবং সংযোগ</a></li>
-                        <li><a>কাউন্সিলরদের প্রোফাইল এবং সংযোগ</a></li>
-                        <li><a>প্রধান নির্বাহী কর্মকর্তার প্রোফাইল এবং সংযোগ</a></li>
-               </ul>
-             </details>
+            <li>
+               <NavLink className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "bg-orange-400" : ""
+                  } to={"/akNojore"}> সিটিজেন চার্টার 
+                  </NavLink>
             </li>
-
-            <li className="bg-zinc-100">
-               <NavLink to={"/akNojore"}> সিটিজেন চার্টার </NavLink>
+            <li >
+               <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : ""
+  } to={"/akNojore"}> নোটিশ </NavLink>
             </li>
-            <li className="bg-zinc-100">
-               <NavLink to={"/akNojore"}> নোটিশ </NavLink>
+            <li >
+               <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  }  to={"/akNojore"}> সামাজিক সুরক্ষা </NavLink>
             </li>
-            <li className="bg-zinc-100">
-               <NavLink to={"/akNojore"}> সামাজিক সুরক্ষা </NavLink>
-            </li>
-            <li className="bg-zinc-100">
-               <NavLink to={"/akNojore"}> ডিজিটাল সেবা </NavLink>
+            <li >
+               <NavLink className={({ isActive, isPending }) =>
+    isPending ? "pending" : isActive ? "bg-orange-400" : "bg-orange-400"
+  } to={"http://digitalmunicipality.gov.bd"}> ডিজিটাল সেবা </NavLink>
             </li>
             </>
 
@@ -88,7 +151,7 @@ const NavBar = () => {
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </div>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
+      <ul tabIndex={0} className="menu menu-sm dropdown-content  mt-3 z-[50] p-2 shadow  rounded-box w-52">
 
        {links}
       </ul>

@@ -52,7 +52,7 @@ const CouncilorList = () => {
         <div>
             <div>
             <h1 className="text-base font-bold p-2 text-cyan-600 bg-orange-400">কাউন্সিলরবৃন্দ</h1>
-           <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 bg-gray-200 border-2 border-black m-1 p-2 justify-center items-center gap-3">
+           <div className="grid justify-center items-center gap-3 sm:grid-cols-2 mx-auto     md:grid-cols-3 lg:grid-cols-3 bg-gray-200 border-2 border-black m-1 p-2 ">
            {
             Councilors.map(councilor=><div key={councilor.id}>
                 <img className="h-20 w-16" src={councilor.image} alt="" />

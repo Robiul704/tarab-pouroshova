@@ -3,41 +3,24 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="bg-gray-100">
+          <img className="w-full h-44" src="https://i.ibb.co/yn4zB7p/Footer-Image.png" alt="" />
+            <footer className="bg-white">
   <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
     
 
-    <div className="lg:flex lg:items-end lg:justify-between">
+    <div className="lg:flex lg:items-center text-black lg:justify-between">
       <div>
         <p></p>
-        <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
-        Site Map Contract Us
+        <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-black lg:text-left">
+        Site Map <span className="mx-5"></span> Contract Us
         </p>
       </div>
 
-      <ul
-        className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
-      >
-        <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> About </a>
-        </li>
-
-        <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Services </a>
-        </li>
-
-        <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Projects </a>
-        </li>
-
-        <li>
-          <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Blog </a>
-        </li>
-      </ul>
+     <h1 className="mx-auto"> Copyright © 2024 | All right ® reserved by Tarabo Paurashava. Developed by eMythMakers.com</h1>
     </div>
 
-    <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-      Copyright &copy; 2022. All rights reserved.
+    <p className=" text-center mx-auto text-sm text-black ">
+    Maintained by Sirajul Salekin
     </p>
   </div>
 </footer>

@@ -93,7 +93,7 @@ const ShebaSomuho = () => {
     return (
         <div>
             <h1 className="text-base font-bold p-2 text-cyan-600 bg-orange-400 my-2">সেবাসমূহ</h1>
-            <div className="grid lg:grid-cols-3 justify-center items-center gap-2">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-2">
                 {
                     sheba.map(s=><Link to={s.link} key={s.id}> 
                     <div className="border border-black p-3" >
